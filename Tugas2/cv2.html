@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas CV - Aldo</title>
+   
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4;
+        }
+        .kertas-cv { 
+            background-color: white; 
+            width: 800px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            border: 1px solid #ccc; 
+        }
+        /* CSS tambahan untuk menu navigasi */
+        .nav-menu {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #2c3e50;
+            margin: 0 15px;
+        }
+        .nav-menu a:hover {
+            color: #3498db;
+        }
+        h2 { 
+            background-color: #2c3e50; 
+            color: white; 
+            padding: 5px 10px; 
+            font-size: 18px;
+        }
+        hr { 
+            border: 1px solid #2c3e50; 
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        /* CSS tambahan untuk form */
+        .form-tabel td {
+            padding: 8px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"], select, textarea {
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kertas-cv">
+        
+        <!-- MENU NAVIGASI BOOKMARK -->
+        <div class="nav-menu">
+            <a href="#profil">Profil</a> |
+            <a href="#pendidikan">Pendidikan</a> |
+            <a href="#organisasi">Organisasi</a> |
+            <a href="#keahlian">Keahlian</a> |
+            <a href="#kontak">Kontak</a>
+        </div>
+      
+        <table width="100%">
+            <tr>
+                <td width="20%">
+                    <img src="Profile Aldo.png" alt="Foto Aldo" width="140" height="140">
+                </td>
+                
+                <td width="60%" align="center">
+                    <h1>Aldo Chrisna</h1>
+                    <p>
+                        <strong>Mahasiswa & Staff Administrasi Finansial</strong><br>
+                        Denpasar, Bali<br>
+                        Email: arkanantaaa220707@gmail.com | Telp: 087-877-565-550
+                    </p>
+                    <a href="https://github.com/TheNightShadeee" target="_blank">Visit Github</a>
+                </td>
+
+                <td width="20%" align="right">
+                    <img src="Logo Unud.png" width="160" height="160">
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!-- Tambahkan ID pada setiap H2 untuk target Bookmark -->
+        <h2 id="profil">Profil Singkat</h2>
+        <p>Saya adalah mahasiswa aktif yang memiliki ketertarikan mendalam pada pengembangan web (HTML & CSS) dan keamanan siber. Saat ini, saya menyeimbangkan waktu kuliah dengan bekerja sebagai Staf Administrasi Finansial di Mr. Coco Bali. Dalam peran tersebut, saya terbiasa mengelola pencatatan operasional harian dan memanfaatkan Microsoft Excel untuk menjaga kerapian data. Saya adalah individu yang teliti dan selalu antusias mempelajari keterampilan teknologi baru untuk diterapkan di dunia kerja.</p>
+
+        <h2>Data Pribadi</h2>
+            <p>Nama : Putu Aldo Chrisna Arkananta Suwidana</p>
+            <p>Tempat, Tgl lahir : Denpasar, 22 Juli 2007</p>
+            <p>Alamat : Jl. Surya Buana I, No 28</p>         
+
+        <h2 id="pendidikan">Riwayat Pendidikan</h2>
+        <ul>
+            <li>SD Negeri 5 Padangsambian (2013 - 2019)</li>
+            <li>SMP Negeri 13 Denpasar (2019 - 2022)</li>
+            <li>SMK Negeri 1 Denpasar (2022 - 2025)</li>
+            <li>Universitas Udayana (2025 - Sekarang)</li>
+        </ul>
+
+        <h2>Pengalaman Kerja</h2>
+        <ul>
+            <li>Staff Administrasi Finansial (2025 - Sekarang)</li>
+        </ul>
+
+        <!-- BAGIAN BARU: TABEL PENGALAMAN ORGANISASI -->
+        <h2 id="organisasi">Pengalaman Organisasi</h2>
+        <table border="1" width="100%" cellspacing="0" cellpadding="5">
+            <tr bgcolor="#e0e0e0">
+                <th>Tahun</th>
+                <th>Nama Organisasi</th>
+                <th>Jabatan</th>
+            </tr>
+            <tr>
+                <td align="center">2025 - Sekarang</td>
+                <td>IT Esega</td>
+                <td>Anggota</td>
+            </tr>
+        </table>
+
+        <h2 id="keahlian">Keahlian</h2>
+        <table border="1" width="100%" cellspacing="0" cellpadding="5">
+            <tr bgcolor="#e0e0e0">
+                <th>Kategori</th>
+                <th>Keahlian</th>
+            </tr>
+            <tr>
+                <td><strong>Web & Database</strong></td>
+                <td>HTML, CSS, MySQL</td>
+            </tr>
+            <tr>
+                <td><strong>Software & Tools</strong></td>
+                <td>Microsoft Excel</td>
+            </tr>
+        </table>
+
+        <!-- BAGIAN BARU: FORMULIR KONTAK -->
+        <h2 id="kontak">Hubungi Saya</h2>
+        <form action="#" method="POST">
+            <table class="form-tabel" width="100%" cellspacing="0">
+                <tr>
+                    <td width="20%"><label for="nama">Nama Lengkap</label></td>
+                    <td width="2%">:</td>
+                    <td><input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Alamat Email</label></td>
+                    <td>:</td>
+                    <td><input type="email" id="email" name="email" placeholder="contoh@email.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td>:</td>
+                    <td><input type="password" id="password" name="password" placeholder="Masukkan password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="hobi">Hobi</label></td>
+                    <td>:</td>
+                    <td>
+                        <!-- Button Select untuk Hobi -->
+                        <select id="hobi" name="hobi">
+                            <option value="" disabled selected>-- Pilih Hobi --</option>
+                            <option value="coding">Coding</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="reading">Reading</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="telepon">No. Telepon</label></td>
+                    <td>:</td>
+                    <td><input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx"></td>
+                </tr>
+                <tr>
+                    <td valign="top"><label for="alamat">Alamat</label></td>
+                    <td valign="top">:</td>
+                    <td><textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right" style="padding-top: 15px;">
+                        <button type="submit" style="padding: 8px 20px; background-color: #2c3e50; color: white; border: none; cursor: pointer;">Kirim Pesan</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+
+</body>
+</html>
