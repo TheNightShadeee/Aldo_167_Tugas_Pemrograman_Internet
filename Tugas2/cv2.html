@@ -15,7 +15,6 @@
             padding: 20px; 
             border: 1px solid #ccc; 
         }
-        /* CSS tambahan untuk menu navigasi */
         .nav-menu {
             background-color: #e0e0e0;
             padding: 10px;
@@ -43,7 +42,6 @@
         li {
             margin-bottom: 10px;
         }
-        /* CSS tambahan untuk form */
         .form-tabel td {
             padding: 8px;
         }
@@ -51,13 +49,15 @@
             width: 100%;
             padding: 5px;
         }
+        th, td {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
     <div class="kertas-cv">
         
-        <!-- MENU NAVIGASI BOOKMARK -->
         <div class="nav-menu">
             <a href="#profil">Profil</a> |
             <a href="#pendidikan">Pendidikan</a> |
@@ -90,7 +90,6 @@
 
         <hr>
 
-        <!-- Tambahkan ID pada setiap H2 untuk target Bookmark -->
         <h2 id="profil">Profil Singkat</h2>
         <p>Saya adalah mahasiswa aktif yang memiliki ketertarikan mendalam pada pengembangan web (HTML & CSS) dan keamanan siber. Saat ini, saya menyeimbangkan waktu kuliah dengan bekerja sebagai Staf Administrasi Finansial di Mr. Coco Bali. Dalam peran tersebut, saya terbiasa mengelola pencatatan operasional harian dan memanfaatkan Microsoft Excel untuk menjaga kerapian data. Saya adalah individu yang teliti dan selalu antusias mempelajari keterampilan teknologi baru untuk diterapkan di dunia kerja.</p>
 
@@ -115,9 +114,9 @@
         <h2 id="panitia">Pengalaman Kepanitiaan</h2>
         <table border="1" width="100%" cellspacing="0" cellpadding="5" style="table-layout: fixed;">
             <tr bgcolor="#e0e0e0">
-                <th width='33%', align="center">Nama Kepanitiaan</th>
-                <th width='33%', align="center">Divisi</th>
-                <th width='33%', align="center">Jabatan</th>
+                <th width='33%'>Nama Kepanitiaan</th>
+                <th width='33%'>Divisi</th>
+                <th width='33%'>Jabatan</th>
             </tr>
             <tr>
                 <td>IT Esega</td>
