@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas CV - Aldo</title>
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Container utama untuk CSS Grid -->
+    <div class="grid-container">
+        
+        <!-- HEADER -->
+        <header class="header">
+            <table width="100%">
+                <tr>
+                    <td width="20%">
+                        <img src="Profile Aldo.png" alt="Foto Aldo" width="140" height="140">
+                    </td>
+                    <td width="60%" align="center">
+                        <h1>Aldo Chrisna</h1>
+                        <p>
+                            <strong>Mahasiswa & Staff Administrasi Finansial</strong><br>
+                            Denpasar, Bali<br>
+                            Email: arkanantaaa220707@gmail.com | Telp: 087-877-565-550
+                        </p>
+                        <a href="https://github.com/TheNightShadeee" target="_blank">Visit Github</a>
+                    </td>
+                    <td width="20%" align="right">
+                        <img src="Logo Unud.png" width="160" height="160">
+                    </td>
+                </tr>
+            </table>
+            
+            <div class="nav-menu">
+                <a href="#profil">Profil</a> |
+                <a href="#pendidikan">Pendidikan</a> |
+                <a href="#organisasi">Organisasi</a> |
+                <a href="#keahlian">Keahlian</a> |
+                <a href="#kontak">Kontak</a>
+            </div>
+        </header>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h2>Data Pribadi</h2>
+            <p><strong>Nama Lengkap:</strong> Putu Aldo Chrisna Arkananta Suwidana</p>
+            <p><strong>Tempat, Tgl lahir:</strong> Denpasar, 22 Juli 2007</p>
+            <p><strong>Alamat:</strong> Jl. Surya Buana I, No 28</p>         
+
+            <h2 id="keahlian">Keahlian</h2>
+            <ul style="padding-left: 15px;">
+                <li><strong>Web & Database:</strong> HTML, CSS, MySQL</li>
+                <li><strong>Software & Tools:</strong> Microsoft Excel</li>
+            </ul>
+
+            <h2 id="kontak">Hubungi Saya</h2>
+            <form action="#" method="POST">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                
+                <label for="Pesan">Pesan:</label>
+                <textarea id="Pesan" name="Pesan" rows="3" placeholder="Pesan Anda"></textarea>
+                
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+        </aside>
+
+        <!-- KONTEN UTAMA (Menggunakan Flexbox) -->
+        <main class="content">
+            
+            <section id="profil" class="flex-item">
+                <h2>Profil Singkat</h2>
+                <p>Saya adalah mahasiswa aktif yang memiliki ketertarikan mendalam pada pengembangan web (HTML & CSS) dan keamanan siber. Saat ini, saya menyeimbangkan waktu kuliah dengan bekerja sebagai Staf Administrasi Finansial di Mr. Coco Bali. Dalam peran tersebut, saya terbiasa mengelola pencatatan operasional harian dan memanfaatkan Microsoft Excel untuk menjaga kerapian data. Saya adalah individu yang teliti dan selalu antusias mempelajari keterampilan teknologi baru untuk diterapkan di dunia kerja.</p>
+            </section>
+
+            <section id="pendidikan" class="flex-item">
+                <h2>Riwayat Pendidikan</h2>
+                <ul style="padding-left: 20px;">
+                    <li>SD Negeri 5 Padangsambian (2013 - 2019)</li>
+                    <li>SMP Negeri 13 Denpasar (2019 - 2022)</li>
+                    <li>SMK Negeri 1 Denpasar (2022 - 2025)</li>
+                    <li>Universitas Udayana (2025 - Sekarang)</li>
+                </ul>
+            </section>
+
+            <section class="flex-item">
+                <h2>Pengalaman Kerja</h2>
+                <ul style="padding-left: 20px;">
+                    <li>Staff Administrasi Finansial (2025 - Sekarang)</li>
+                </ul>
+            </section>
+
+            <section id="organisasi" class="flex-item">
+                <h2>Pengalaman Kepanitiaan</h2>
+                <table border="1" width="100%" cellspacing="0" cellpadding="5">
+                    <tr bgcolor="#e0e0e0">
+                        <th>Nama Kepanitiaan</th>
+                        <th>Divisi</th>
+                        <th>Jabatan</th>
+                    </tr>
+                    <tr align="center">
+                        <td>IT Esega</td>
+                        <td>Kesekretariatan</td>
+                        <td>Anggota</td>
+                    </tr>
+                    <tr align="center">
+                        <td>Build IT</td>
+                        <td>Kesekretariatan</td>
+                        <td>Anggota</td>
+                    </tr>
+                </table>
+            </section>
+            
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>&copy; 2026 Tugas CV CSS - Putu Aldo Chrisna. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

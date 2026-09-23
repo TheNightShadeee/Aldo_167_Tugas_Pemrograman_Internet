@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.grid-container {
+    display: grid;
+
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 1fr 2.5fr; 
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header  { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.content { grid-area: content; }
+.footer  { grid-area: footer; }
+
+
+.header {
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 15px;
+}
+
+.nav-menu {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #2c3e50;
+    margin: 0 15px;
+}
+
+.nav-menu a:hover {
+    color: #3498db;
+}
+
+.sidebar {
+    background-color: #fafafa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sidebar p, .sidebar ul {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-submit:hover {
+    background-color: #3498db;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.flex-item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-left: 4px solid #2c3e50; 
+    border-radius: 5px;
+}
+
+h2 {
+    background-color: #2c3e50;
+    color: white;
+    padding: 8px 12px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+}
